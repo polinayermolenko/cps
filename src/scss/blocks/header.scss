@@ -1,0 +1,133 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    width: 100%;
+    height: 88px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0px 15px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet) {
+    .header {
+      padding: 0 25px;
+    }
+  }
+  
+  @media (min-width: $desktop) {
+    .header {
+      display: none;
+    }
+  }
+
+  .header::after {
+    position: absolute;
+    content: "";
+    top: 28px;
+    right: 130px;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+  }
+
+  @media (min-width: $tablet) {
+    .header::after {
+      right: 142px;
+    }
+  }
+
+ @media (min-width: $tablet) {
+   .header::before {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 84px;
+    width: 2px;
+    height: 32px;
+    background-color: #EAEAEA;
+    border-radius: 1px;
+  }
+ }
+  
+  .header__logo {
+    position: absolute;
+    top: 15px;
+    left: 70px;
+  }
+
+  @media (min-width: $tablet) {
+    .header__logo {
+      left: 105px;
+    }
+  }
+  
+  @media (min-width: $desktop) {
+    .header__logo {
+      top: 22%;
+      left: 7%;
+    }
+  }
+  
+  .header__burger {
+    margin-top: 3px;
+    background-image: url('../img/burger.svg');
+
+   &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+  }
+
+  @media(min-width: $desktop) {
+    .header__burger {
+      display: none;
+    }
+  }
+
+  .header__contact-list {
+    display: none;
+  }
+  
+  @media (min-width: $tablet) {
+    .header__contact-list {
+      position: absolute;
+      bottom: 0px;
+      right: 170px;
+      display: flex;
+      width: 150px;
+      justify-content: space-between;
+    }
+  }
+  
+  @media(min-width: $desktop) {
+    .header__contact-list {
+      right: 0;
+      left: -30px;
+      bottom: 105px;
+    }
+  }
+
+  .header__service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 7px;
+    padding: 0;
+    width: 95px;
+  }
+  
+  
+  @media(min-width: $desktop) {
+    .header__service-list {
+      display: none;
+    }
+  }

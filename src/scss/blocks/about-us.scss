@@ -1,0 +1,89 @@
+.about-us__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  @media (min-width: $tablet) {
+    .about-us__wrapper {
+      display: flex;
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+  
+  @media (min-width: $desktop) {
+    .about-us__wrapper {
+      width: 1006px;
+      padding-right: 35px;
+      padding-left: 35px;
+    }
+  }
+  
+  @media(min-width: $tablet) {
+    .about-us__left-column {
+      width: 50%;
+      margin-right: 10%;
+    }
+  }
+  
+  .about-us__text-container {
+    height: 90px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    
+    &--full {
+        height: auto;
+      }  
+}
+  
+  @media (min-width: $tablet) {
+    .about-us__text-container {
+      height: 145px;
+    }
+
+    .about-us__text-container--full {
+      height: auto;
+    }  
+  }
+  
+  @media (min-width: $desktop) {
+    .about-us__text-container {
+      margin-bottom: 15px;
+    }
+  }
+  
+  .about-us__text {
+    margin: 0;
+    padding: 0;
+  
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .about-us__picture {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media (min-width: $tablet) {
+    .about-us__picture {
+      width: 360px;
+      height: 208px;
+    }
+  }
+  
+  @media (min-width: $desktop) {
+    .about-us__picture {
+      width: 532px;
+      height: 307px;
+    }
+  }
+  
+  .about-us__more-button {
+    margin: 0;
+    margin-bottom: 15px;
+  }

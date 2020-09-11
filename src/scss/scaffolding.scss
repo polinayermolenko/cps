@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Bold.woff2') format('woff2'),
+         url('../fonts/TTLakes-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Medium.woff2') format('woff2'),
+         url('../fonts/TTLakes-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Regular.woff2') format('woff2'),
+         url('../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+     min-width: 320px;
+     margin: 0;
+     padding: 0;
+   
+     font-size: 16px;
+     line-height: 24px;
+     font-family: "TT Lakes", "Arial", sans-serif;
+     color: #1b1c21;
+   }
+   
+   img {
+     max-width: 100%;
+     height: auto;
+   }
+
+  .visually-hidden {
+     position: absolute;
+   
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+   
+     white-space: nowrap;
+   
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+   }
