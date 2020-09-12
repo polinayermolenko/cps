@@ -3,16 +3,7 @@
   }
   
 .contact-list__link {
+    display: block;
     text-decoration: none;
   }
   
-.contact-list__icon {
-    &:hover {
-      opacity: 0.8;
-    
-    }
-  
-    &:active {
-      opacity: 0.5;
-    }
-  }

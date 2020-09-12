@@ -1,6 +1,7 @@
 .more-button {
     display: flex;
     font: inherit;
+    color: #1B1C21;
     border: none;
     background-color: transparent;
     background-image: url("../img/more.svg");
@@ -9,7 +10,17 @@
     padding-left: 30px;
     cursor: pointer;
     outline: none;
+
+    &:hover {
+      color: #ADADAF; 
+    }
+
+    &:active {
+      color: #1B1C21;
+    }
   }
+
+ 
   
   
   @media (min-width: $tablet) {

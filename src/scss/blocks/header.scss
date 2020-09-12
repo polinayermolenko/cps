@@ -75,15 +75,6 @@
   
   .header__burger {
     margin-top: 3px;
-    background-image: url('../img/burger.svg');
-
-   &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
   }
 
   @media(min-width: $desktop) {
