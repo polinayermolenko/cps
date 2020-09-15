@@ -1,5 +1,39 @@
 .title {
+    position: relative;
+    max-width: 600px;
     font-size: 28px;
     font-weight: bold;
     line-height: 40px;
 }
+
+
+.title::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -16px;
+    width: 4px;
+    height: 40px;
+    background: #41F6D7;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  @media (min-width: $tablet) {
+    .title::before {
+        left: -24px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .title::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -32px;
+      width: 3px;
+      height: 40px;
+      background: #41F6D7;
+      border-radius: 0;
+    }
+  }

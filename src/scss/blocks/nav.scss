@@ -1,23 +1,18 @@
 .nav {
-    width: 100%;
     box-sizing: border-box;
-    margin: 0 auto 24px;
     padding: 0 15px;
   }
   
   @media (min-width: $tablet) {
     .nav {
       padding: 0 25px;
-      margin-bottom: 32px;
     }
   }
   
   @media (min-width: $desktop) {
     .nav {
-      width: 1006px;
       padding-right: 35px;
       padding-left: 35px;
-      margin-bottom: 19px;
     }
   }
 
@@ -33,7 +28,7 @@
     text-decoration: none;
     white-space: nowrap;
 
-    &:hover {
+    &:not(.nav__link--active):hover {
       color: #ADADAF; 
     }
   

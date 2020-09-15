@@ -1,6 +1,12 @@
 .contact-list {
     list-style: none;
   }
+
+  @media (min-width: $tablet) {
+    .contact-list {
+      width: 150px;
+    }
+  }
   
 .contact-list__link {
     display: block;

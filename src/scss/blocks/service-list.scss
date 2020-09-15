@@ -1,22 +1,24 @@
 .service-list {
     list-style: none;
+    width: 95px;
   }
-  
-.service-list--main {
-    display: none;
+
+ @media(min-width: $desktop) {
+   .service-list {
+     height: 40px;
+     width: 350px;
+   }
+ 
+ } 
+
+.service-list__title {
+  display: none;
 }
-  
-@media (min-width: $desktop) {
-    .service-list--main {
-      display: flex;
-      flex-wrap: wrap;
-    }
-}
-  
+
 @media(min-width: $desktop) {
-    .service-list__item--repair {
-      margin-right: 20px;
-    }
+  .service-list__title {
+    display: block;
+  }
 }
 
 .service-list__link {

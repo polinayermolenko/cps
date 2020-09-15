@@ -1,26 +1,30 @@
 .header {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 88px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  border-bottom: 1px solid #D9FFF5;
+}
   
-    width: 100%;
-    height: 88px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: 0px 15px;
-    background-color: #ffffff;
-  }
-
   @media (min-width: $tablet) {
     .header {
-      padding: 0 25px;
+      padding-left: 25px;
     }
   }
-  
+
   @media (min-width: $desktop) {
     .header {
-      display: none;
+      margin: 0 auto;
+      width: 1020px;
+      height: 10px;
+      background-color: #F8F8F8;
+      border: none;
     }
   }
 
@@ -28,7 +32,7 @@
     position: absolute;
     content: "";
     top: 28px;
-    right: 130px;
+    right: 133px;
     width: 2px;
     height: 32px;
     background-color: #EAEAEA;
@@ -37,7 +41,13 @@
 
   @media (min-width: $tablet) {
     .header::after {
-      right: 142px;
+      right: 140px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    .header::after {
+      display: none;
     }
   }
 
@@ -53,72 +63,68 @@
     border-radius: 1px;
   }
  }
-  
+
+ @media (min-width: $desktop) {
+  .header::before {
+    display: none;
+  }
+}
+
   .header__logo {
-    position: absolute;
-    top: 15px;
-    left: 70px;
+    margin-left: 17px;
   }
 
   @media (min-width: $tablet) {
     .header__logo {
-      left: 105px;
+      margin-left: 43px;
     }
   }
   
-  @media (min-width: $desktop) {
-    .header__logo {
-      top: 22%;
-      left: 7%;
-    }
-  }
-  
-  .header__burger {
-    margin-top: 3px;
-  }
-
-  @media(min-width: $desktop) {
+  @media(min-width: $desktop){
     .header__burger {
       display: none;
     }
   }
 
-  .header__contact-list {
+.header__contact-list {
     display: none;
   }
   
   @media (min-width: $tablet) {
     .header__contact-list {
-      position: absolute;
-      bottom: 0px;
-      right: 170px;
+      margin-left: auto;
       display: flex;
-      width: 150px;
       justify-content: space-between;
     }
   }
   
   @media(min-width: $desktop) {
     .header__contact-list {
-      right: 0;
-      left: -30px;
-      bottom: 105px;
+      display: none;
     }
   }
 
   .header__service-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 25px;
+    margin-left: auto;
     justify-content: space-between;
-    margin: 0;
-    margin-top: 7px;
     padding: 0;
-    width: 95px;
   }
   
-  
+  @media(min-width: $tablet) {
+    .header__service-list {
+      margin-left: 42px;
+    } 
+  }
+
   @media(min-width: $desktop) {
     .header__service-list {
-      display: none;
+      position: absolute;
+      margin-right: 32px;
+      margin-left: 0px;
+      top: 12px;
+      left: 60%;
     }
   }
