@@ -149,6 +149,10 @@ img {
   .logo {
     display: none; } }
 
+.button {
+  background-color: transparent;
+  border: none; }
+
 .ui-button {
   width: 40px;
   height: 40px;
@@ -186,7 +190,8 @@ img {
 
 @media (min-width: 1336px) {
   .service-list__title {
-    display: block; } }
+    display: block;
+    margin-right: 8px; } }
 
 .service-list__item:hover {
   opacity: 0.8; }
@@ -204,10 +209,6 @@ img {
   .service-list__link {
     display: flex;
     align-items: center; } }
-
-@media (min-width: 1336px) {
-  .service-list__icon {
-    margin-left: 8px; } }
 
 .main {
   background-color: #f8f8f8; }
@@ -394,8 +395,6 @@ img {
   line-height: 24px;
   font-size: 16px;
   color: #1B1C21;
-  border: none;
-  background-color: transparent;
   background-image: url(./static/more.svg);
   background-repeat: no-repeat;
   padding: 0;
