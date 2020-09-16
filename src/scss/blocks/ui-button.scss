@@ -1,10 +1,7 @@
 .ui-button {
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
    
    &:hover {
     opacity: 0.8;
@@ -13,4 +10,11 @@
   &:active {
     opacity: 0.5;
   }
+}
+
+.ui-button__icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
 }

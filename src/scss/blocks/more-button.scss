@@ -10,15 +10,7 @@
     padding-left: 30px;
     cursor: pointer;
     outline: none;
-
-    &:hover {
-      color: #ADADAF; 
-    }
-
-    &:active {
-      color: #1B1C21;
-    }
-  }
+   }
   
   @media (min-width: $tablet) {
     .more-button {
