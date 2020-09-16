@@ -149,21 +149,20 @@ img {
   .logo {
     display: none; } }
 
-.button {
+.ui-button {
+  cursor: pointer;
   background-color: transparent;
   border: none; }
-
-.ui-button {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  cursor: pointer; }
   .ui-button:hover {
     opacity: 0.8; }
   .ui-button:active {
     opacity: 0.5; }
+
+.ui-button__icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0; }
 
 .contact-list {
   list-style: none; }
@@ -193,6 +192,11 @@ img {
     display: block;
     margin-right: 8px; } }
 
+@media (min-width: 1336px) {
+  .service-list__item {
+    display: flex;
+    align-items: center; } }
+
 .service-list__item:hover {
   opacity: 0.8; }
 
@@ -204,11 +208,6 @@ img {
     color: #ADADAF; }
   .service-list__link:active {
     color: #1B1C21; }
-
-@media (min-width: 1336px) {
-  .service-list__link {
-    display: flex;
-    align-items: center; } }
 
 .main {
   background-color: #f8f8f8; }
@@ -401,10 +400,6 @@ img {
   padding-left: 30px;
   cursor: pointer;
   outline: none; }
-  .more-button:hover {
-    color: #ADADAF; }
-  .more-button:active {
-    color: #1B1C21; }
 
 @media (min-width: 768px) {
   .more-button {
