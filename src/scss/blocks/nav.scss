@@ -11,14 +11,32 @@
   
   @media (min-width: $desktop) {
     .nav {
-      padding-right: 35px;
-      padding-left: 35px;
+      padding: 0 35px;
     }
   }
 
   .nav__list {
     margin: 0;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  
+    &::-webkit-scrollbar {
+      width: 0;
+      background-color: transparent;
+    }
+   
   }
+
+  @media (min-width: $desktop) {
+    .nav__list {
+      flex-wrap: wrap;
+      overflow: hidden;
+    }
+}
 
   .nav__link {
     border: 2px solid transparent;

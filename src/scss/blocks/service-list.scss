@@ -21,6 +21,10 @@
   }
 }
 
+.service-list__item:hover {
+ opacity: 0.8;
+}
+
 .service-list__link {
     display: block;
     color: inherit;
