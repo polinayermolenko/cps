@@ -14,7 +14,7 @@
   
   @media (min-width: $tablet) {
     .header {
-      padding-left: 25px;
+      padding: 0 25px;
     }
   }
 
@@ -107,7 +107,6 @@
   .header__service-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 25px;
     margin-left: auto;
     justify-content: space-between;
     padding: 0;
