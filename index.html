@@ -10,7 +10,7 @@
 <body>
       <header class="header">
         <button class="header__burger ui-button" type="button" aria-label="Открыть меню">
-          <svg class="ui-button" width="40" height="40">
+          <svg class="header__icon" width="40" height="40">
             <use xlink:href="img/sprite.svg#icon-burger"></use>
           </svg>
         </button>
@@ -34,8 +34,8 @@
             </button>
           </li>
           <li class="contact-list__item">
-            <a class="contact-list__link" href="#" aria-label="Войти в личный кабинет">
-              <svg class="contact-list__icon ui-button" width="40" height="40">
+            <a class="contact-list__link ui-button" href="#" aria-label="Войти в личный кабинет">
+              <svg class="contact-list__icon" width="40" height="40">
                 <use xlink:href="img/sprite.svg#icon-profile"></use>
               </svg>
             </a>
@@ -63,14 +63,13 @@
       </header>
 
       <main class="main">
-        <div class="main__content-wrapper">
             <h1 class="main__title title">Услуги и сервисы</h1>
 
             <nav class="main__nav nav">
               <h2 class="visually-hidden">Навигация по разделу</h2>
               <ul class="nav__list nav-list">
                 <li class="nav__item">
-                  <a class="nav__link nav-list__link nav__link--active" href="#">Ремонтируемые бренды</a>
+                  <a class="nav__link nav__link--active" href="#">Ремонтируемые бренды</a>
                 </li>
                 <li class="nav__item">
                   <a class="nav__link" href="#">Ремонтируемые устройства</a>
@@ -90,7 +89,7 @@
               </ul>
             </nav>
 
-            <article class="about-us">
+            <article class="main__about-us about-us">
               <div class="about-us__wrapper">
                 <h2 class="visually-hidden">О нас</h2>
                 <div class="about-us__content">
@@ -100,7 +99,6 @@
                       техники Dell. Только у нас вы можете отремонтировать свой
                       ноутбук Dell с официальной гарантией производителя.
                     </p>
-                    <br>
                     <p class="about-us__text">
                       Мы успешно работаем с 1992 года и заслужили репутацию
                       надежного партнера, что подтверждает большое количество
@@ -117,14 +115,13 @@
                     Читать далее
                   </button>
                 </div>
-                <picture>
+                <picture class="about-us__picture">
                   <source media="(min-width: 1336px)" srcset="./img/logo-desktop.jpg">
                   <source media="(min-width: 768px)" srcset="./img/logo-tab.jpg">
-                  <img class="about-us__picture" src="./img/logo-mob.jpg" width="320" height="176" alt="Логотип сервисного центра по ремонту техники">
+                  <img class="about-us__img" src="./img/logo-mob.jpg" width="320" height="176" alt="Логотип сервисного центра по ремонту техники">
                 </picture>
               </div>
             </article>
-          </div>
         </main>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
