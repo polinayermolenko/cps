@@ -58,7 +58,7 @@ img {
 
 @media (min-width: 768px) {
   .header {
-    padding-left: 25px; } }
+    padding: 0 25px; } }
 
 @media (min-width: 1336px) {
   .header {
@@ -128,7 +128,6 @@ img {
 .header__service-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: 25px;
   margin-left: auto;
   justify-content: space-between;
   padding: 0; }
