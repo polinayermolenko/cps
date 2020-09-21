@@ -1,0 +1,140 @@
+.menu {
+  width: 320px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 15px;
+  background-color: #ffffff;
+  z-index: 2;
+  transition: left 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+@media(min-width: $tablet) {
+  .menu {
+    padding: 20px 25px 25px;
+  }
+}
+
+@media(min-width: $desktop) {
+    .menu {
+      box-sizing: border-box;
+      width: 320px;
+      padding: 35px 25px 25px;
+      background-color: #ffffff;
+      transition: none;
+    }
+  }
+  
+  .menu--open {
+    left: 0;
+    transition: left 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+  
+  @media(min-width: $tablet) {
+    .menu--open {
+      left: 0;
+      margin-left: 0;
+      padding: 25px;
+    }
+  }
+
+  .menu__logo {
+    position: absolute;
+    top: 18px;
+    left: 80px;
+  }
+  
+  @media(min-width: $desktop) {
+    .menu__logo {
+      top: 30px;
+      left: 25px;
+    }
+  }
+
+  .menu__top-wrapper {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+  
+  @media(min-width: $desktop) {
+    .menu__top-wrapper {
+      width: 100%;
+    }
+  }
+
+  @media(min-width: $desktop) {
+    .menu__cross {
+      display: none;
+    }
+  }
+
+  @media(min-width: $desktop) {
+    .menu__search-button {
+      margin-left: auto;
+    }
+  }
+  
+  .menu__navigation {
+    margin-bottom: 20px;
+  }
+
+   .menu__bottom-wrapper {
+      margin-top: 30px;
+  }
+
+  // @media(min-width: $tablet) {
+  //   .menu__bottom-wrapper {
+  //     margin-top: 250px;
+  //   }
+  // }
+
+  .menu__contact-list {
+    display: flex;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu__contact-item {
+    margin-right: 15px;
+  }
+  
+  .menu__email {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+  
+  .menu__phone {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+  }
+  
+  .menu__lang-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .menu__lang {
+    margin: 0;
+    margin-right: 7px;
+    padding: 0;
+    font-size: inherit;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+    letter-spacing: -0.2px;
+  }
+  
+  .menu__lang--active {
+    color: #7e7e82;
+  }

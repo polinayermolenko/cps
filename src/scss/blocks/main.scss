@@ -40,3 +40,19 @@
       margin-bottom: 19px;
     }
   }
+
+  .main__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //left: -320px;
+    bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+  .main__menu {
+    display: flex;
+    top: 0;
+    left: 0;
+  }
+}

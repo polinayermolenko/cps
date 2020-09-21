@@ -1,5 +1,6 @@
 @import "scaffolding";
 @import "variables";
+@import "./blocks/page-wrapper";
 @import "./blocks/header";
 @import "./blocks/logo";
 @import "./blocks/ui-button.scss";
@@ -10,3 +11,5 @@
 @import "./blocks/nav";
 @import "./blocks/about-us";
 @import "./blocks/more-button";
+@import "./blocks/menu";
+@import "./blocks/navigation";
