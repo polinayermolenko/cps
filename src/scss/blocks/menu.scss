@@ -1,11 +1,4 @@
 .menu {
-    position: absolute;
-    top: 0;
-    //left: 0;
-    left: -320px;
-    bottom: 0;
-    right: 0;
-    height: 100%;
   width: 320px;
   box-sizing: border-box;
   display: flex;
@@ -24,9 +17,6 @@
 
 @media(min-width: $desktop) {
     .menu {
-      display: flex;
-    top: 0;
-    left: 0;
       box-sizing: border-box;
       width: 320px;
       padding: 35px 25px 25px;
@@ -50,26 +40,25 @@
   }
 
   .menu__logo {
-    position: absolute;
-    top: 18px;
-    left: 80px;
+    margin-left: 16px;
+    margin-right: auto;
   }
   
   @media(min-width: $desktop) {
     .menu__logo {
-      top: 30px;
-      left: 25px;
+      margin-left: 0;
     }
   }
 
-  .menu__top-wrapper {
+  .menu__header {
     display: flex;
+    align-items: center;
     margin-bottom: 15px;
     justify-content: space-between;
   }
   
   @media(min-width: $desktop) {
-    .menu__top-wrapper {
+    .menu__header {
       width: 100%;
     }
   }
@@ -90,15 +79,9 @@
     margin-bottom: 32px;
   }
 
-  //  .menu__bottom-wrapper {
-  //     margin-top: 30px;
-  // }
-
-  // @media(min-width: $tablet) {
-  //   .menu__bottom-wrapper {
-  //     margin-top: 250px;
-  //   }
-  // }
+   .menu__footer {
+      margin-top: 30px;
+  }
 
   .menu__contact-list {
     display: flex;

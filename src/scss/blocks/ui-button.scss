@@ -10,6 +10,11 @@
   &:active {
     opacity: 0.5;
   }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
 }
 
 .ui-button__icon {

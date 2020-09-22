@@ -26,7 +26,11 @@
     padding: 10px 0;
     text-decoration: none;
     color: #1b1c21;
-  
+
+    &:not(.nav__link--active):hover {
+      color: #ADADAF; 
+    }
+
     &--active {
       color:#7e7e82;
     }
