@@ -3,7 +3,33 @@ import "../scss/style.scss";
 const navListLinks = document.querySelectorAll(".nav__link");
 const aboutMoreButton = document.querySelector(".about-us__more-button");
 const textContainer = document.querySelector(".about-us__text-container");
+const openButton = document.querySelector(".header__burger");
+const closeButton = document.querySelector(".menu__cross");
+const menu = document.querySelector(".menu");
+const overlay = document.querySelector(".overlay");
 
+const onOverlayClick = () => {
+  overlay.classList.remove("overlay--active");
+  if (menu.classList.contains("menu--open")) {
+    menu.classList.remove("menu--open");
+  }   
+};
+
+openButton.addEventListener("click", () => {
+  menu.classList.add("menu--open");
+  overlay.classList.add("overlay--active");
+
+  overlay.addEventListener("click", (evt) => {
+    onOverlayClick(evt);
+  });
+});
+
+closeButton.addEventListener("click", () => {
+  menu.classList.remove("menu--open");
+  overlay.classList.remove("overlay--active");
+
+  document.removeEventListener("click", onOverlayClick);
+});
 
 navListLinks.forEach((link) => {
     link.addEventListener("click", () => {

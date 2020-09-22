@@ -1,16 +1,29 @@
 .title {
     position: relative;
     max-width: 500px;
+    padding: 24px 0;
     font-size: 28px;
     font-weight: bold;
     line-height: 40px;
     letter-spacing: -0.6px;
 }
 
+@media (min-width: $tablet) {
+  .title {
+      padding: 24px 0 32px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .title {
+      padding: 32px 0 8px;
+  }
+}
+
 .title::before {
     position: absolute;
     content: "";
-    top: 0;
+    top: 24px;
     left: -16px;
     width: 4px;
     height: 40px;
@@ -29,7 +42,7 @@
     .title::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: 32px;
       left: -32px;
       width: 3px;
       height: 40px;

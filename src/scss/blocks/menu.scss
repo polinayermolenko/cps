@@ -1,11 +1,18 @@
 .menu {
+    position: absolute;
+    top: 0;
+    //left: 0;
+    left: -320px;
+    bottom: 0;
+    right: 0;
+    height: 100%;
   width: 320px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 20px 15px;
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 3;
   transition: left 0.7s cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
@@ -17,6 +24,9 @@
 
 @media(min-width: $desktop) {
     .menu {
+      display: flex;
+    top: 0;
+    left: 0;
       box-sizing: border-box;
       width: 320px;
       padding: 35px 25px 25px;
@@ -77,12 +87,12 @@
   }
   
   .menu__navigation {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
   }
 
-   .menu__bottom-wrapper {
-      margin-top: 30px;
-  }
+  //  .menu__bottom-wrapper {
+  //     margin-top: 30px;
+  // }
 
   // @media(min-width: $tablet) {
   //   .menu__bottom-wrapper {
@@ -103,12 +113,16 @@
   }
   
   .menu__email {
+    display: block;
+    text-decoration: none;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
   }
   
   .menu__phone {
+    display: block;
+    text-decoration: none;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;

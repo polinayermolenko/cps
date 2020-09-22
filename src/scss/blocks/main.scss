@@ -10,18 +10,18 @@
   }
 
   .main__title {
-    margin: 24px 16px;
+    margin: 0 16px;
   }
 
   @media (min-width: $tablet) {
     .main__title {
-      margin: 24px 24px 32px;
+      margin: 0 24px;
     }
   }
 
   @media (min-width: $desktop) {
     .main__title {
-      margin: 32px 32px 8px;
+      margin: 0 32px;
     }
   }
     
@@ -42,17 +42,17 @@
   }
 
   .main__menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    //left: -320px;
-    bottom: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // left: -320px;
+    // bottom: 0;
   }
 
   @media (min-width: $desktop) {
   .main__menu {
-    display: flex;
-    top: 0;
-    left: 0;
+    // display: flex;
+    // top: 0;
+    // left: 0;
   }
 }
