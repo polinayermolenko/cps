@@ -8,6 +8,8 @@
     <link href="style.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet"></head>
 <body>
+  <div class="overlay"></div>
+     <div class="page-wrapper">
       <header class="header">
         <button class="header__burger ui-button" type="button" aria-label="Открыть меню">
           <svg class="ui-button__icon" width="40" height="40">
@@ -63,6 +65,89 @@
       </header>
 
       <main class="main">
+        <aside class="main__menu menu">
+          <header class="menu__header">
+            <button class="menu__cross ui-button ui-button--cross" type="button" aria-label="Закрыть меню">
+            </button>
+            <a class="menu__logo">
+              <img class="menu__logo-image" src="./img/logo.svg" width="96" height="51" alt="Логотип сервисного центра по ремонту техники">
+            </a>
+            <a class="menu__search-button search-button ui-button" href="#" aria-label="Поиск">
+              <svg class="ui-button__icon" width="40" height="40">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+          </header>
+          <nav class="menu__navigation navigation">
+            <ul class="navigation__site-list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Ремонт техники</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--active">Услуги и сервисы</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Корпоративным клиентам</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Продавцам техники</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Партнерам</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Производителям</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Наши сервисные центры</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <footer class="menu__footer">
+            <ul class="menu__contact-list">
+              <li class="menu__contact-item menu__contact-list-item--phone">
+                <button class="menu__contact-link contact-list__link--phone ui-button" href="#" aria-label="Заказать звонок">
+                  <svg class="ui-button__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="menu__contact-item contact-list__item--message">
+                <button class="menu__contact-link contact-list__link--message ui-button" href="#" aria-label="Обратная связь">
+                  <svg class="ui-button__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-chat"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="menu__contact-item">
+                <a class="menu__contact-link" href="#" aria-label="Войти в личный кабинет">
+                  <svg class="ui-button__icon" width="40" height="40">
+                    <use xlink:href="img/sprite.svg#icon-profile"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <a class="menu__email">mail@cps.com</a>
+            <a class="menu__phone">8 800 890 8900</a>
+            <ul class="menu__lang-list">
+              <li class="menu__lang-item">
+                <button class="menu__lang menu__lang--active" type="button">
+                  Ru
+                </button>
+              </li>
+              <li class="menu__lang-item">
+                <button class="menu__lang" type="button">En</button>
+              </li>
+              <li class="menu__lang-item">
+                <button class="menu__lang" type="button">Ch</button>
+              </li>
+            </ul>
+          </footer>
+        </aside>
+
             <h1 class="main__title title">Услуги и сервисы</h1>
             <nav class="main__nav nav">
               <h2 class="visually-hidden">Навигация по разделу</h2>
@@ -121,6 +206,39 @@
                 </picture>
               </div>
             </article>
+            <p class="about-us__text">
+              Мы являемся авторизованным сервисным центром по ремонту
+              техники Dell. Только у нас вы можете отремонтировать свой
+              ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p class="about-us__text">
+              Мы успешно работаем с 1992 года и заслужили репутацию
+              надежного партнера, что подтверждает большое количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются
+              по рекомендациям и, в свою очередь, советуют нас родным и
+              близким. Мы успешно работаем с 1992 года и заслужили репутацию
+              надежного партнера, что подтверждает большое количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются
+              по рекомендациям и, в свою очередь, советуют нас родным и
+              близким.
+            </p>
+            <p class="about-us__text">
+              Мы являемся авторизованным сервисным центром по ремонту
+              техники Dell. Только у нас вы можете отремонтировать свой
+              ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p class="about-us__text">
+              Мы успешно работаем с 1992 года и заслужили репутацию
+              надежного партнера, что подтверждает большое количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются
+              по рекомендациям и, в свою очередь, советуют нас родным и
+              близким. Мы успешно работаем с 1992 года и заслужили репутацию
+              надежного партнера, что подтверждает большое количество
+              постоянных клиентов. Мы гордимся тем, что к нам обращаются
+              по рекомендациям и, в свою очередь, советуют нас родным и
+              близким.
+            </p>
         </main>
+      </div>
 <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
