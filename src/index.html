@@ -69,7 +69,7 @@
       <main class="main">
         <aside class="main__menu menu">
           <header class="menu__header">
-            <button class="menu__cross ui-button ui-button--cross" type="button" aria-label="Закрыть меню">
+            <button class="menu__close-button ui-button ui-button--close" type="button" aria-label="Закрыть меню">
             </button>
             <a class="menu__logo">
               <img class="menu__logo-image"
@@ -112,31 +112,31 @@
             </ul>
           </nav>
           <footer class="menu__footer">
-            <ul class="menu__contact-list">
-              <li class="menu__contact-item menu__contact-list-item--phone">
-                <button class="menu__contact-link contact-list__link--phone ui-button" href="#" aria-label="Заказать звонок">
+            <ul class="menu__contact-list contact-list">
+              <li class="contact-list__item">
+                <button class="contact-list__link contact-list__link--phone ui-button" href="#" aria-label="Заказать звонок">
                   <svg class="ui-button__icon" width="40" height="40">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                 </button>
               </li>
-              <li class="menu__contact-item contact-list__item--message">
-                <button class="menu__contact-link contact-list__link--message ui-button" href="#" aria-label="Обратная связь">
+              <li class="contact-list__item">
+                <button class="contact-list__link contact-list__link--message ui-button" href="#" aria-label="Обратная связь">
                   <svg class="ui-button__icon" width="40" height="40">
                     <use xlink:href="img/sprite.svg#icon-chat"></use>
                   </svg>
                 </button>
               </li>
-              <li class="menu__contact-item">
-                <a class="menu__contact-link" href="#" aria-label="Войти в личный кабинет">
+              <li class="contact-list__item">
+                <a class="contact-list__link ui-button" href="#" aria-label="Войти в личный кабинет">
                   <svg class="ui-button__icon" width="40" height="40">
                     <use xlink:href="img/sprite.svg#icon-profile"></use>
                   </svg>
                 </a>
               </li>
             </ul>
-            <a class="menu__email">mail@cps.com</a>
-            <a class="menu__phone">8 800 890 8900</a>
+            <a class="menu__email" href="mailto:mail@cps.com">mail@cps.com</a>
+            <a class="menu__phone" href="tel:8 800 890 8900">8 800 890 8900</a>
             <ul class="menu__lang-list">
               <li class="menu__lang-item">
                 <button class="menu__lang menu__lang--active" type="button">

@@ -4,7 +4,7 @@ const navListLinks = document.querySelectorAll(".nav__link");
 const aboutMoreButton = document.querySelector(".about-us__more-button");
 const textContainer = document.querySelector(".about-us__text-container");
 const openButton = document.querySelector(".header__burger");
-const closeButton = document.querySelector(".menu__cross");
+const closeButton = document.querySelector(".menu__close-button");
 const menu = document.querySelector(".menu");
 const overlay = document.querySelector(".overlay");
 

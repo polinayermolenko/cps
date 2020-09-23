@@ -64,7 +64,7 @@
   }
 
   @media(min-width: $desktop) {
-    .menu__cross {
+    .menu__close-button{
       display: none;
     }
   }
@@ -85,14 +85,12 @@
 
   .menu__contact-list {
     display: flex;
+    width: 150px;
+    justify-content: space-between;
     margin: 0;
     margin-bottom: 15px;
     padding: 0;
     list-style: none;
-  }
-  
-  .menu__contact-item {
-    margin-right: 15px;
   }
   
   .menu__email {
@@ -101,6 +99,8 @@
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
+    color: #1B1C21;
+    cursor: pointer;
   }
   
   .menu__phone {
@@ -112,6 +112,8 @@
     font-size: 24px;
     line-height: 32px;
     font-weight: bold;
+    color: #1B1C21;
+    cursor: pointer;
   }
   
   .menu__lang-list {
@@ -130,6 +132,7 @@
     background-color: transparent;
     border: none;
     letter-spacing: -0.2px;
+    cursor: pointer;
   }
   
   .menu__lang--active {
