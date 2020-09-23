@@ -193,7 +193,7 @@ img {
   height: 40px;
   padding: 0; }
 
-.ui-button--cross {
+.ui-button--close {
   background-image: url(./static/cross.svg);
   border-radius: 50%;
   width: 40px;
@@ -209,7 +209,9 @@ img {
 
 .contact-list__link {
   display: block;
-  text-decoration: none; }
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
 
 .service-list {
   list-style: none;
@@ -517,7 +519,7 @@ img {
     width: 100%; } }
 
 @media (min-width: 1336px) {
-  .menu__cross {
+  .menu__close-button {
     display: none; } }
 
 @media (min-width: 1336px) {
@@ -532,20 +534,21 @@ img {
 
 .menu__contact-list {
   display: flex;
+  width: 150px;
+  justify-content: space-between;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
   list-style: none; }
-
-.menu__contact-item {
-  margin-right: 15px; }
 
 .menu__email {
   display: block;
   text-decoration: none;
   margin: 0;
   margin-bottom: 10px;
-  padding: 0; }
+  padding: 0;
+  color: #1B1C21;
+  cursor: pointer; }
 
 .menu__phone {
   display: block;
@@ -555,7 +558,9 @@ img {
   padding: 0;
   font-size: 24px;
   line-height: 32px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: #1B1C21;
+  cursor: pointer; }
 
 .menu__lang-list {
   display: flex;
@@ -571,7 +576,8 @@ img {
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  letter-spacing: -0.2px; }
+  letter-spacing: -0.2px;
+  cursor: pointer; }
 
 .menu__lang--active {
   color: #7e7e82; }
@@ -594,6 +600,7 @@ img {
 
 .navigation__link {
   position: relative;
+  width: 100%;
   display: inline-block;
   padding: 10px 0;
   text-decoration: none;
