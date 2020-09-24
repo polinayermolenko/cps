@@ -146,7 +146,7 @@ img {
   .header__contact-list {
     margin-left: auto;
     display: flex;
-    justify-content: space-between; } }
+    justify-content: flex-start; } }
 
 @media (min-width: 1336px) {
   .header__contact-list {
@@ -156,12 +156,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: auto;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0; }
 
 @media (min-width: 768px) {
   .header__service-list {
-    margin-left: 42px; } }
+    margin-left: 10px; } }
 
 @media (min-width: 1336px) {
   .header__service-list {
@@ -169,7 +169,7 @@ img {
     margin-right: 32px;
     margin-left: 0px;
     top: 12px;
-    left: 60%; } }
+    right: 0; } }
 
 @media (min-width: 1336px) {
   .logo {
@@ -201,26 +201,17 @@ img {
   padding: 0; }
 
 .contact-list {
-  list-style: none; }
-
-@media (min-width: 768px) {
-  .contact-list {
-    width: 150px; } }
+  list-style: none;
+  padding: 0; }
 
 .contact-list__link {
   display: block;
   text-decoration: none;
-  margin: 0;
+  margin-right: 16px;
   padding: 0; }
 
 .service-list {
-  list-style: none;
-  width: 95px; }
-
-@media (min-width: 1336px) {
-  .service-list {
-    height: 40px;
-    width: 350px; } }
+  list-style: none; }
 
 .service-list__title {
   display: none; }
@@ -228,7 +219,8 @@ img {
 @media (min-width: 1336px) {
   .service-list__title {
     display: block;
-    margin-right: 8px; } }
+    margin-right: 8px;
+    margin-left: 32px; } }
 
 @media (min-width: 1336px) {
   .service-list__item {
@@ -240,12 +232,17 @@ img {
 
 .service-list__link {
   display: block;
+  margin-left: 16px;
   color: inherit;
   text-decoration: none; }
   .service-list__link:hover {
     color: #ADADAF; }
   .service-list__link:active {
     color: #1B1C21; }
+
+@media (min-width: 1336px) {
+  .service-list__link {
+    margin-left: 0; } }
 
 .main {
   background-color: #f8f8f8; }
@@ -534,8 +531,7 @@ img {
 
 .menu__contact-list {
   display: flex;
-  width: 150px;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   margin-bottom: 15px;
   padding: 0;
