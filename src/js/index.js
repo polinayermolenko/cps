@@ -8,40 +8,57 @@ const closeButton = document.querySelector(".menu__close-button");
 const menu = document.querySelector(".menu");
 const overlay = document.querySelector(".overlay");
 
-const onOverlayClick = () => {
-  overlay.classList.remove("overlay--active");
-  if (menu.classList.contains("menu--open")) {
-    menu.classList.remove("menu--open");
-  }   
-};
-
-openButton.addEventListener("click", () => {
+const openMenu = () => {
   menu.classList.add("menu--open");
   overlay.classList.add("overlay--active");
 
-  overlay.addEventListener("click", (evt) => {
-    onOverlayClick(evt);
-  });
-});
+  openButton.removeEventListener("click", openMenuButtonClickHandler);
+  overlay.addEventListener("click", overlayClickHandler);
+  closeButton.addEventListener("click", closeMenuButtonClickHandler);
+  document.addEventListener("keydown", escapeKeyDownHandler);
+};
 
-closeButton.addEventListener("click", () => {
-  menu.classList.remove("menu--open");
+const openMenuButtonClickHandler = () => {
+  openMenu();
+ };
+
+openButton.addEventListener("click", openMenuButtonClickHandler);
+
+const closeMenu = () => {
   overlay.classList.remove("overlay--active");
+  menu.classList.remove("menu--open");
 
-  document.removeEventListener("click", onOverlayClick);
-});
+  closeButton.removeEventListener("click", closeMenuButtonClickHandler);
+  overlay.removeEventListener("click", overlayClickHandler);
+  document.removeEventListener("keydown", escapeKeyDownHandler);
+  openButton.addEventListener("click", openMenuButtonClickHandler);
+};
+
+const closeMenuButtonClickHandler = () => {
+  closeMenu();
+};
+
+const overlayClickHandler = () => {
+   closeMenu();
+};
+
+const escapeKeyDownHandler = (evt) => {
+  if (evt.key === "Escape") {
+    closeMenu();
+  }
+};
 
 navListLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-        navListLinks.forEach((link) => {
-        if (link.classList.contains("nav__link--active")) {
-          link.classList.remove("nav__link--active");
-        }
+      link.addEventListener("click", () => {
+          navListLinks.forEach((link) => {
+          if (link.classList.contains("nav__link--active")) {
+            link.classList.remove("nav__link--active");
+          }
+        });
+    
+        link.classList.toggle("nav__link--active");
       });
-  
-      link.classList.add("nav__link--active");
     });
-  });
   
 aboutMoreButton.addEventListener("click", () => {
     if (aboutMoreButton.innerText === "Читать далее") {
