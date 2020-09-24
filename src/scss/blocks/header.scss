@@ -94,7 +94,7 @@
     .header__contact-list {
       margin-left: auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
     }
   }
   
@@ -108,13 +108,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
   }
   
   @media(min-width: $tablet) {
     .header__service-list {
-      margin-left: 42px;
+      margin-left: 10px;
     } 
   }
 
@@ -124,6 +124,6 @@
       margin-right: 32px;
       margin-left: 0px;
       top: 12px;
-      left: 60%;
+      right: 0;
     }
   }

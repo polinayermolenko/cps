@@ -1,17 +1,12 @@
 .contact-list {
     list-style: none;
-  }
-
-  @media (min-width: $tablet) {
-    .contact-list {
-      width: 150px;
-    }
+    padding: 0;
   }
   
 .contact-list__link {
     display: block;
     text-decoration: none;
-    margin: 0;
+    margin-right: 16px;
     padding: 0;
   }
   
