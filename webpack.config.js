@@ -92,6 +92,20 @@ module.exports = {
         from: "./src/css/normalize.css",
         to: "css",
       },
+      {
+        from: "./src/css/swiper-bundle.min.css",
+        to: "css",
+      },
+
+      {
+        from: "./src/js/swiper-bundle.min.js",
+        to: "js",
+      },
+
+      {
+        from: "./src/js/slider.js",
+        to: "js",
+      },
     ])
   ],
 };

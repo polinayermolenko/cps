@@ -1,0 +1,80 @@
+.brand-list {
+    list-style: none;
+  }
+  
+  .brand-list__item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 238px;
+    height: 72px;
+    padding: 0;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: 15px 50%;
+  }
+  
+  .brand-list__item--lenovo {
+    background-image: url("../img/lenovo.svg");
+  }
+  
+  .brand-list__item--samsung {
+    background-image: url("../img/samsung.svg");
+  }
+  
+  .brand-list__item--apple {
+    background-image: url("../img/apple.svg");
+  }
+  
+  .brand-list__item--viewsonic {
+    background-image: url("../img/viewsonic.svg");
+  }
+  
+  .brand-list__item--bosch {
+    background-image: url("../img/bosch.svg");
+  }
+  
+  .brand-list__item--hp {
+    background-image: url("../img/hp.svg");
+  }
+  
+  .brand-list__item--acer {
+    background-image: url("../img/acer.svg");
+  }
+  
+  .brand-list__item--sony {
+    background-image: url("../img/sony.svg");
+  }
+  
+  .brand-list__link {
+    position: relative;
+  
+    &::before {
+      position: absolute;
+      content: "";
+      top: -20px;
+      left: -60px;
+      width: 38px;
+      height: 38px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 2px solid #ff3e79;
+    }
+  
+    &::after {
+      position: absolute;
+      content: "";
+      top: -4px;
+      left: -45px;
+      width: 7px;
+      height: 7px;
+      border: #ff3e79;
+      border: 3px solid #ff3e79;
+      border-bottom: none;
+      border-left: none;
+      border-radius: 2px;
+      transform: rotate(45deg);
+    }
+  }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS - ремонт техники DELL</title>
     <link href="./css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
@@ -220,7 +221,158 @@
                 </picture>
               </div>
             </article>
+
+            <section class="equipment-brand">
+              <div class="equipment-brand__wrapper">
+                <h2 class="visually-hidden">
+                  Бренды, с которыми работает компания
+                </h2>
+                <p class="equipment-brand__title">
+                  Ремонт техники различных брендов
+                </p>
+
+                <ul class="equipment-brand__brand-list brand-list">
+                  <li class="brand-list__item brand-list__item--lenovo">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Леново»</span
+                      >
+                    </a>
+                  </li>
+                  <li class="brand-list__item brand-list__item--samsung">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Самсунг»</span
+                      >
+                    </a>
+                  </li>
+                  <li class="brand-list__item brand-list__item--apple">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Эппл»</span
+                      >
+                    </a>
+                  </li>
+                  <li class="brand-list__item brand-list__item--viewsonic">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Вью Соник»</span
+                      >
+                    </a>
+                  </li>
+                  <li class="brand-list__item brand-list__item--bosch">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Бош»</span
+                      >
+                    </a>
+                  </li>
+                  <li class="brand-list__item brand-list__item--hp">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Эйч Пи»</span
+                      >
+                    </a>
+                  </li>
+                  <li class="brand-list__item brand-list__item--acer">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Асер»</span
+                      >
+                    </a>
+                  </li>
+                  <li class="brand-list__item brand-list__item--sony">
+                    <a class="brand-list__link" href="#">
+                      <span class="visually-hidden"
+                        >Сссылка на сайт компании «Сони»</span
+                      >
+                    </a>
+                  </li>
+                </ul>
+                <button
+                  class="equipment-brand__more-button more-button"
+                  type="button"
+                >
+                  Показать все
+                </button>
+
+                <div class="swiper-container swiper-container--brand">
+                  <div class="swiper-wrapper swiper-wrapper--brand">
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img
+                          src="./img/lenovo.svg"
+                          alt="Сссылка на сайт компании «Леново»"
+                        />
+                      </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img src="./img/samsung.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img src="./img/apple.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img src="./img/viewsonic.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img src="./img/bosch.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img src="./img/hp.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img src="./img/acer.svg" alt="" />
+                      </a>
+                    </div>
+                    <div class="swiper-slide swiper-slide--brand">
+                      <a
+                        class="swiper-slide__link swiper-slide__link--brand"
+                        href="#"
+                      >
+                        <img src="./img/sony.svg" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination swiper-pagination--brand"></div>
+                </div>
+              </div>
+            </section>
         </main>
       </div>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/slider.js"></script>
 </body>
 </html>
