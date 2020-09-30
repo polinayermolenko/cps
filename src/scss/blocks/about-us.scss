@@ -94,3 +94,9 @@
   margin: 0;
   margin-bottom: 15px;
 }
+
+@media (min-width: $tablet) {
+  .about-us__more-button {
+    margin-bottom: 0;
+  }
+}

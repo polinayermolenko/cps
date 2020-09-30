@@ -1,7 +1,13 @@
 .segment {
-    margin-bottom: 25px;
+  padding-bottom: 25px;
+}
+
+@media(min-width: $tablet) {
+  .segment {
+    padding-bottom: 50px;
   }
-  
+}
+
   .segment__wrapper {
     width: 100%;
     box-sizing: border-box;
@@ -17,12 +23,22 @@
   .segment__title {
     margin: 0;
     margin-bottom: 15px;
-    padding: 15px 32px;
-  
+    padding: 16px;
+    
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    letter-spacing: -0.2px;
     color: #7e7e82;
     text-transform: uppercase;
     background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
     border-top: 1px solid #D9FFF5;
+  }
+
+  @media(min-width: $tablet) {
+    .segment__title {
+      padding: 15px 32px;
+    }
   }
 
   .segment__swiper {
@@ -45,6 +61,5 @@
     .segment__more-button {
       display: block;
       margin-top: 10px;
-      padding-bottom: 50px;
     }
   }
