@@ -1,0 +1,50 @@
+.segment {
+    margin-bottom: 25px;
+  }
+  
+  .segment__wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+  
+  @media(min-width: $tablet) {
+    .segment__wrapper {
+      padding: 0 25px;
+    }
+  }
+  
+  .segment__title {
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 15px 0;
+  
+    color: #7e7e82;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+    border-top: 1px solid #D9FFF5;
+  }
+
+  .segment__swiper {
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+
+  @media(min-width: $tablet) {
+    .segment__swiper {
+      padding-bottom: 0;
+    }
+  }
+
+    
+  .segment__more-button {
+    display: none;
+  }
+
+  @media(min-width: $tablet) {
+    .segment__more-button {
+      display: block;
+      margin-top: 10px;
+      padding-bottom: 50px;
+    }
+  }

@@ -1,63 +1,43 @@
-const sliderBrand = document.querySelector('.swiper-container--brand');
-const sliderType = document.querySelector('.swiper-container--type');
-const sliderPrices = document.querySelector('.swiper-container--prices');
+ 
+let swiperBrand;
+let isSwiperBrandActived = false;
+const TABLET = 768;
+const sliderBrand = document.querySelector('.swiper-container');
 
 
-let swiperBrand = new Swiper(sliderBrand, {
-	slidesPerView: 1,
-	spaceBetween: 15,
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-  },
-
-  breakpoints: {
-    460: {
-      slidesPerView: 2,
-      spaceBetween: 10
-    },
-
-    660: {
-      slidesPerView: 3
+const activateSwiper = () => {
+  if (document.documentElement.clientWidth < TABLET) {
+    if (isSwiperBrandActived) {
+        return false;
     }
-  }
-});
+    swiperBrand = new Swiper(sliderBrand, {
+	     slidesPerView: 1,
+	     spaceBetween: 15,
+	     loop: true,
+	     pagination: {
+	      	el: '.swiper-pagination',
+	      	clickable: true,
+       },
 
-let swiperType = new Swiper(sliderType, {
-  slidesPerView: 1,
-	spaceBetween: 15,
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-  },
+       breakpoints: {
+        460: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
 
-  breakpoints: {
-    460: {
-      slidesPerView: 2,
-      spaceBetween: 10
-    },
-
-    660: {
-      slidesPerView: 3
+        660: {
+          slidesPerView: 3
+        }
+       }
+   });
+   isSwiperBrandActived = true;
+  } else {
+    if (!isSwiperBrandActived) {
+        return false;
     }
+    swiperBrand.destroy(true, true);
+    isSwiperBrandActived = false;
+}
   }
-});
-
-let swiperPrices = new Swiper(sliderPrices, {
-  slidesPerView: 1,
-	spaceBetween: 15,
-	loop: true,
-	pagination: {
-		el: '.swiper-pagination',
-		clickable: true,
-  },
-
-  breakpoints: {
-    460: {
-      slidesPerView: 2,
-      spaceBetween: 10
-    },
-  }
-});
+ window.onload = activateSwiper;
+  window.onresize = activateSwiper;

@@ -101,7 +101,10 @@ module.exports = {
         from: "./src/js/swiper-bundle.min.js",
         to: "js",
       },
-
+      {
+        from: "./src/js/swiper-bundle.min.js.map",
+        to: "js",
+      },
       {
         from: "./src/js/slider.js",
         to: "js",
