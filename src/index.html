@@ -68,6 +68,46 @@
       </header>
 
       <main class="main">
+        <section class="main__modal modal modal--feedback">
+          <div class="modal__wrapper">
+            <button class="modal__button-close modal__button-close--feedback ui-button ui-button--close" type="button" aria-label="Закрыть модальное окно">
+            </button>
+            <h2 class="title title--modal modal__title">Обратная связь</h2>
+            <form class="modal__form">
+              <label>
+                <input class="modal__input" type="text" name="name" placeholder="Имя" aria-label="Имя">
+              </label>
+              <label>
+                <input class="modal__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон">
+              </label>
+              <label>
+                <input class="modal__input" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+              </label>
+              <textarea class="modal__input modal__textarea" name="message" placeholder="Сообщение" aria-label="Сообщение"></textarea>
+              <p class="modal__agreement">Нажимая “отправить”, вы даете согласие <br><span class="modal__agreement--important">на обработку персональных данных</span> и
+                соглашаетесь с нашей политикой <span class="modal__agreement--important">конфиденциальности</span></p>
+              <button class="modal__button button-order" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+    
+        <section class="main__modal modal modal--call">
+          <div class="modal__wrapper">
+            <button class="modal__button-close modal__button-close--call ui-button ui-button--close" type="button" aria-label="Закрыть модальное окно">
+            </button>
+            <h2 class="title title--modal modal__title">Заказать звонок</h2>
+            <form class="modal__form">
+              <label>
+                <input class="modal__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон">
+              </label>
+              <p class="modal__agreement">Нажимая “отправить”, вы даете согласие <br><span class="modal__agreement--important">на обработку персональных данных</span> и
+                соглашаетесь с нашей политикой <span class="modal__agreement--important">конфиденциальности</span></p>
+              <button class="modal__button button-order" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+
+
         <aside class="main__menu menu">
           <header class="menu__header">
             <button class="menu__close-button ui-button ui-button--close" type="button" aria-label="Закрыть меню">
@@ -336,6 +376,14 @@
               </button>
               </div>
             </section>
+
+
+            <section class="main__device segment">
+              <h2 class="segment__title">Цены на услуги</h2>
+              <div class="segment__wrapper">
+
+              </div>
+              </section>  
         </main>
       </div>
       <script src="js/swiper-bundle.min.js"></script>

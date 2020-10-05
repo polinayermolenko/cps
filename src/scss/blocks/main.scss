@@ -55,3 +55,11 @@
     left: 0;
   }
 }
+
+.main__modal {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  bottom: 0;
+  z-index: 5;
+}
