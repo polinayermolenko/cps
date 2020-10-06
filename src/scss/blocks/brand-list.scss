@@ -23,7 +23,7 @@
 .brand-list__item {
   min-height: 72px;
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: $main;
     border: 1px solid #eaeaea;
     border-radius: 5px;  
 }
@@ -45,7 +45,7 @@
       right: 10px;
       width: 38px;
       height: 38px;
-      background-color: #ffffff;
+      background-color: $main;
       border-radius: 50%;
       border: 2px solid #ff3e79;
     }

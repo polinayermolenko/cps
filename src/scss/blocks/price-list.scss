@@ -1,0 +1,141 @@
+@media(min-width: $tablet) {
+    .price-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.price-list__item {
+  box-sizing: border-box;
+  min-height: 180px;
+  padding: 15px 15px 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1B1C21;
+  background-color: $main;
+  border-radius: 6px;
+}
+
+@media(min-width: $tablet) {
+    .price-list__item {
+      min-height: 24px;
+      display: grid;
+      grid-template-areas: 
+      "a b c";
+      grid-template-columns: 2fr 1fr 1.5fr;
+      gap: 15px;
+      padding: 22px;
+      border-bottom: 1px solid #EAEAEA;
+      border-radius: 0;
+    }
+}
+
+@media(min-width: $tablet) {
+  .price-list__item:first-child {
+    background-color: #f8f8f8;
+    border-bottom: none;
+  }
+}
+
+@media(min-width: $tablet) {
+  .price-list__item:nth-child(2) {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+}
+
+@media(min-width: $tablet) {
+  .price-list__item:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+@media(min-width: $tablet) {
+  .price-list__price {
+    text-align: start;
+  }
+}
+
+.price-list__subtitle {
+  line-height: 16px;
+  color: #7E7E82;
+}
+
+@media(min-width: $tablet) {
+    .price-list__subtitle {
+      display: none;
+    }
+  }
+  
+    .price-list__item--tablet {
+      display: none;
+    }
+
+    @media(min-width: $tablet) {
+      .price-list__item--tablet {
+        display: grid;
+      }
+    }
+
+  @media(min-width: $tablet) {
+    .price-list__subtitle--tablet {
+      display: inline-block;
+      background-color: F8F8F8;
+      line-height: 16px;
+      color: #7E7E82;
+    }
+  }
+
+.price-list__top, 
+.price-list__middle {
+  padding-bottom: 15px;
+}
+
+.price-list__bottom {
+  position: relative;
+}
+
+@media(min-width: $tablet) {
+  .price-list__top {
+   grid-area: a;
+   padding-bottom: 0;
+  }
+}
+
+@media(min-width: $tablet) {
+  .price-list__middle {
+   grid-area: b;
+   padding-bottom: 0;
+  }
+}
+
+@media(min-width: $tablet) {
+  .price-list__bottom {
+   grid-area: c;
+  }
+}
+
+.price-list__service,
+.price-list__price,
+.price-list__time {
+  margin: 0;
+  padding: 0;
+}
+
+ .price-list__button {
+    position: absolute;
+    top: 5px;
+    right: 0px; 
+  }
+
+@media(min-width: $tablet) {
+  .price-list__button {
+    top: -8px;
+  }
+}
+
+
+    
+
+

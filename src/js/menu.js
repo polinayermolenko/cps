@@ -44,7 +44,12 @@ const escapeKeyDownHandler = (evt) => {
 
 openButton.addEventListener("click", openMenuButtonClickHandler);
 
+// нужно ли выносить в отдельный файл модалки? 
+// я для них использую функцию closeMenu
+// при отрытом меню слева сайта, пользователь может нажать на кнопки "Заказать зонок" и "Обратная связь", т. е.
+// нужно воспользоваться функцией closeMenu и закрыть меню прежде чем открыть модалки 
 
+// вариант оптимизации модалок
 const contactButtons = document.querySelectorAll(".contact-list__link--message");
 const callButtons = document.querySelectorAll(".contact-list__link--phone");
 const closeFeedbackButton = document.querySelector(".modal__button-close--feedback");
@@ -133,12 +138,7 @@ callButtons.forEach((item) => {
   });
 
 
-
-
-
-
-
-
+// без оптимизации
 // const openModalFeedback = () => {
 //     if (menu.classList.contains("menu--open")) {
 //     closeMenu();

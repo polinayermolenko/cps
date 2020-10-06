@@ -1,4 +1,5 @@
 const navListLinks = document.querySelectorAll(".nav__link");
+const navigationLinks = document.querySelectorAll(".navigation__link");
 const aboutMoreButton = document.querySelector(".about-us__more-button");
 const textContainer = document.querySelector(".about-us__text-container");
 const brandMoreButton = document.querySelector(".segment__more-button--brand");
@@ -15,6 +16,18 @@ navListLinks.forEach((link) => {
         });
     
         link.classList.toggle("nav__link--active");
+      });
+    });
+
+  navigationLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        navigationLinks.forEach((link) => {
+          if (link.classList.contains("navigation__link--active")) {
+            link.classList.remove("navigation__link--active");
+          }
+        });
+    
+        link.classList.toggle("navigation__link--active");
       });
     });
   
