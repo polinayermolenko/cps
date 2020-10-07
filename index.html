@@ -9,7 +9,8 @@
     <link href="style.css" rel="stylesheet">
 <link href="style.css" rel="stylesheet"></head>
 <body>
-  <div class="overlay"></div>
+  <div class="overlay-modal"></div>
+  <div class="overlay-menu"></div>
      <div class="page-wrapper">
       <header class="header">
         <button class="header__burger ui-button" type="button" aria-label="Открыть меню">
@@ -71,20 +72,20 @@
             <button class="modal__button-close modal__button-close--feedback ui-button ui-button--close" type="button" aria-label="Закрыть модальное окно">
             </button>
             <h2 class="title title--modal modal__title">Обратная связь</h2>
-            <form class="modal__form">
+            <form class="modal__form modal-form" action="#" method="post">
               <label>
-                <input class="modal__input" type="text" name="name" placeholder="Имя" aria-label="Имя">
+                <input class="modal-form__input" type="text" name="name" placeholder="Имя" aria-label="Имя">
               </label>
               <label>
-                <input class="modal__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон">
+                <input class="modal-form__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон">
               </label>
               <label>
-                <input class="modal__input" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
+                <input class="modal-form__input" type="email" name="email" placeholder="Электронная почта" aria-label="Электронная почта">
               </label>
-              <textarea class="modal__input modal__textarea" name="message" placeholder="Сообщение" aria-label="Сообщение"></textarea>
-              <p class="modal__agreement">Нажимая “отправить”, вы даете согласие <br><span class="modal__agreement--important">на обработку персональных данных</span> и
-                соглашаетесь с нашей политикой <span class="modal__agreement--important">конфиденциальности</span></p>
-              <button class="modal__button button-order" type="submit">Отправить</button>
+              <textarea class="modal-form__input modal-form__textarea" name="message" placeholder="Сообщение" aria-label="Сообщение"></textarea>
+              <p class="modal-form__agreement">Нажимая “отправить”, вы даете согласие <br><span class="modal-form__agreement--important">на обработку персональных данных</span> и
+                соглашаетесь с нашей политикой <span class="modal-form__agreement--important">конфиденциальности</span></p>
+              <button class="modal-form__button button-order" type="submit">Отправить</button>
             </form>
           </div>
         </section>
@@ -94,13 +95,13 @@
             <button class="modal__button-close modal__button-close--call ui-button ui-button--close" type="button" aria-label="Закрыть модальное окно">
             </button>
             <h2 class="title title--modal modal__title">Заказать звонок</h2>
-            <form class="modal__form">
+            <form class="modal__form modal-form" action="#" method="post">
               <label>
-                <input class="modal__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон">
+                <input class="modal-form__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон">
               </label>
-              <p class="modal__agreement">Нажимая “отправить”, вы даете согласие <br><span class="modal__agreement--important">на обработку персональных данных</span> и
-                соглашаетесь с нашей политикой <span class="modal__agreement--important">конфиденциальности</span></p>
-              <button class="modal__button button-order" type="submit">Отправить</button>
+              <p class="modal-form__agreement">Нажимая “отправить”, вы даете согласие <br><span class="modal-form__agreement--important">на обработку персональных данных</span> и
+                соглашаетесь с нашей политикой <span class="modal-form__agreement--important">конфиденциальности</span></p>
+              <button class="modal-form__button button-order" type="submit">Отправить</button>
             </form>
           </div>
         </section>
@@ -352,8 +353,6 @@
               </div>
             </section>
 
-
-            
             <section class="main__device segment">
               <h2 class="segment__title">Цены на услуги</h2>
               <div class="segment__wrapper">
@@ -463,25 +462,27 @@
                   </div>
                   <div class="swiper-pagination swiper-pagination--prices"></div>
                 </div>
+                <div class="segment__footer">
                 <p class="segment__proposal">
                   Все цены узаканы с учетом НДС. Стоимость ремонта указана на
                   единичную услугу. Для получения коммерческого предложения на
                   постоянное обслуживание оставьте заявку.
                 </p>
                 <a class="segment__proposal-link" href="#">Получить коммерческое предложение</a>
+                </div>
               </div>
               </section>  
         </main>
         <footer class="footer">
           <div class="footer__wrapper">
-            <p class="footer__info footer__info--top">
+            <p class="footer__info footer__info--copyright">
               <span>© 2019 CPS</span>
-              <span>Разработано командой Apesong</span>
+              <a class="footer__link">Разработано командой Apesong</a>
             </p>
-            <p class="footer__info footer__info--middle">
-              Политика конфиденциальности
+            <p class="footer__info footer__info--privacy">
+              <a class="footer__link">Политика конфиденциальности</a>
             </p>
-            <p class="footer__info footer__info--bottom">
+            <p class="footer__info footer__info--oferta">
               Информация, размещенная на данной странице, не является публичной офертой
             </p>
           </div>
