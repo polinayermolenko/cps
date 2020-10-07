@@ -42,7 +42,7 @@
   }
 
   .main__menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -320px;
     bottom: 0;
@@ -50,6 +50,7 @@
 
   @media (min-width: $desktop) {
   .main__menu {
+    position: absolute;
     display: flex;
     top: 0;
     left: 0;

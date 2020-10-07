@@ -7,6 +7,11 @@ const openMenu = () => {
     menu.classList.add("menu--open");
     overlay.classList.add("overlay--active");
   
+    
+    // document.body.style.height= "100%";
+    // document.body.style.width = "100%";
+    // document.body.style.position = "fixed";
+    document.body.style.overflow = "hidden";
     openButton.removeEventListener("click", openMenuButtonClickHandler);
     overlay.addEventListener("click", overlayClickHandler);
     closeButton.addEventListener("click", closeMenuButtonClickHandler);
@@ -17,6 +22,7 @@ const closeMenu = () => {
     overlay.classList.remove("overlay--active");
     menu.classList.remove("menu--open");
   
+    document.body.style.overflow = "visible";
     closeButton.removeEventListener("click", closeMenuButtonClickHandler);
     overlay.removeEventListener("click", overlayClickHandler);
     document.removeEventListener("keydown", escapeKeyDownHandler);
@@ -76,7 +82,7 @@ const openModal = (modalObj) => {
   if (menu.classList.contains("menu--open")) {
     closeMenu();
   }
-
+  document.body.style.overflow = "hidden";
   modalObj.modal.classList.add("modal--open");
   modalObj.buttonClose.classList.add("modal__button-close--open");
   overlay.classList.add("overlay--active");
@@ -95,6 +101,7 @@ const closeModal = (modalObj) => {
   modalObj.buttonClose.classList.remove("modal__button-close--open");
   overlay.classList.remove("overlay--active");
 
+  document.body.style.overflow = "visible";
   modalObj.buttonClose.removeEventListener("click", closeModalButtonClickHandler);
   overlay.removeEventListener("click", overlayClickModalHandler);
   document.removeEventListener("keydown", escapeKeyDownModalHandler);
