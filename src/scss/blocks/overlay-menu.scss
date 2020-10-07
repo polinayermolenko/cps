@@ -1,8 +1,8 @@
-.overlay {
+.overlay-menu {
     display: none;
   }
   
-  .overlay--active {
+  .overlay-menu--active {
     position: fixed;
     display: block;
     width: 100%;
@@ -13,8 +13,8 @@
     z-index: 2;
   }
 
-  @media(min-width: $desktop) {
-    .overlay--active {
-      z-index: 4;
-    }
-  }
+  // @media(min-width: $desktop) {
+  //   .overlay-menu--active {
+  //     z-index: 4;
+  //   }
+  // }
