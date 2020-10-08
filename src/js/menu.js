@@ -3,11 +3,14 @@ const closeButton = document.querySelector(".menu__close-button");
 const menu = document.querySelector(".menu");
 const overlayMenu = document.querySelector(".overlay-menu");
 const overlayMod = document.querySelector(".overlay-modal");
+const overflow = document.querySelector(".overflow");
+const feedbackModal = document.querySelector(".modal--feedback");
+const callModal = document.querySelector(".modal--call");
 
 const openMenu = () => {
     menu.classList.add("menu--open");
     overlayMenu.classList.add("overlay-menu--active");
-    document.body.style.overflow = "hidden";
+    overflow.classList.add("overflow--hidden");
     openButton.removeEventListener("click", openMenuButtonClickHandler);
     overlayMenu.addEventListener("click", overlayClickHandler);
     closeButton.addEventListener("click", closeMenuButtonClickHandler);
@@ -17,8 +20,7 @@ const openMenu = () => {
 const closeMenu = () => {
     overlayMenu.classList.remove("overlay-menu--active");
     menu.classList.remove("menu--open");
-  
-    document.body.style.overflow = "visible";
+    overflow.classList.remove("overflow--hidden");
     closeButton.removeEventListener("click", closeMenuButtonClickHandler);
     overlayMenu.removeEventListener("click", overlayClickHandler);
     document.removeEventListener("keydown", escapeKeyDownHandler);
@@ -37,15 +39,14 @@ const closeMenuButtonClickHandler = () => {
 const overlayClickHandler = () => {
      closeMenu();
 };
-  
+
 const escapeKeyDownHandler = (evt) => {
-    if (evt.key === "Escape" && overlayMod.classList.contains("overlay-modal--active")) {
-      menu.style.backdrop = "static";
-      menu.style.keybord = "false";
-    }
-    if (evt.key === "Escape" && !overlayMod.classList.contains("overlay-modal--active")) {
-      closeMenu();
-    }
-};
+  if ( (evt.key === "Escape" && callModal.classList.contains("modal--open")) || (evt.key === "Escape" && feedbackModal.classList.contains("modal--open")) ) {
+    return;
+  }
+  if ( (evt.key === "Escape" && !callModal.classList.contains("modal--open")) || (evt.key === "Escape" && !feedbackModal.classList.contains("modal--open")) ) {
+    closeMenu();
+  }
+}
 
 openButton.addEventListener("click", openMenuButtonClickHandler);
